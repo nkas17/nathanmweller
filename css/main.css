@@ -187,16 +187,6 @@ aside img {
   filter: grayscale(1);
 }
 
-
-footer{
-  clear: both;
-  opacity: 1;
-  float: left;
-  position: relative;
-  width: 100%;
-  margin-bottom: 2%;
-}
-
 footer li{
   color: #5C6D77;
 }
@@ -225,10 +215,12 @@ nav a:hover{
 a.mdn-promo{
   float: right;
   margin: 0 2% 2% 2%;
+  text-align: center;
 }
 
-ul.footer-links{
-  margin: 0 2% 2% 2%;
+a.mdn-promo img{
+  width: 70%;
+  height: 70%;
 }
 
 .mobile{

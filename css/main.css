@@ -115,21 +115,14 @@ a:link, a:visited, a:focus{
   transition: font-size 400ms ease;
 }
 
-a:hover{
-  text-decoration: none;
-  color: black;
-  font-size: 1.2em;
-}
 
 
 nav a:link, nav a:visited, nav a:focus{
   text-decoration: none;
 }
 
-nav a:hover{
-  text-decoration: underline;
-  color: black;
-}
+
+
 ul{
   /* background: rgba(127, 171, 240, 0.5); */
 }
@@ -153,9 +146,19 @@ li{
   transition: all 200ms ease-in;
   transform: scale(1);
 }
-.me:hover{
-  transition: all 200ms ease-in;
-  transform: scale(1.5);}
+
+@media (hover: hover) {
+  .me:hover{
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+  }
+  a:hover{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+  }
+}
+
 
 
 @media only screen and (min-width: 968px){

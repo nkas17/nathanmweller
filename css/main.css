@@ -72,6 +72,7 @@ body {
   background: rgba(249, 250, 250, 0.37);
   height: 100%;
   widows: 100%;
+  overflow: auto;
 }
 /* body::after {
   content: "";

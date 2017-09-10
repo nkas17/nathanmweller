@@ -71,6 +71,10 @@ body::after {
   z-index: -1;   
 }
 
+h2{
+  font-size: 1.2em;
+}
+
 .wrapper {
   width: 100%;
   display: flex;
@@ -146,6 +150,25 @@ li{
   transition: all 200ms ease-in;
   transform: scale(1);
 }
+
+section{
+    color: black;
+    margin: 0 2% 2% 2%;
+  }
+  
+  article{
+    background: rgba(249, 250, 250, 0.37);
+    padding: 2%;
+  }
+  
+  article:last-child {
+  
+    margin-bottom: 2%;
+  }
+  
+  article p{
+    padding: 0 0 10px 10px;
+  }
 
 @media (hover: hover) {
   .me:hover{

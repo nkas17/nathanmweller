@@ -54,13 +54,15 @@ table {
 
 /*********** end of reset **********/
 body {
-  color: #282727
+  color: #282727;
 }
 
 body::after {
   content: "";
   background: no-repeat url("../imgs/mtn.jpg") black;
+  background-size: cover;
   opacity: 0.75;
+  background-size: cover;
   top: 0;
   left: 0;
   bottom: 0;
@@ -98,10 +100,12 @@ body::after {
 .header h1 {
   font: 3em fantasy;
   font-weight: bold;
+  /* background: rgba(127, 171, 240, 0.5); */
 }
 
 .header p {
   font: 1.5em fantasy;
+  /* background: rgba(127, 171, 240, 0.5); */
 }
 
 .nav {
@@ -130,6 +134,9 @@ nav a:link, nav a:visited, nav a:focus{
 nav a:hover{
   text-decoration: underline;
   color: black;
+}
+ul{
+  /* background: rgba(127, 171, 240, 0.5); */
 }
 
 li{

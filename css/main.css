@@ -81,7 +81,7 @@ body::after {
 .item {
   flex: 1 1 auto;
   text-align: center;
-  margin: 2%;
+  margin: 1%;
 }
 
 .header {

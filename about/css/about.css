@@ -1,0 +1,10 @@
+.me-container{
+	display: none;	
+}
+
+@media only screen and (min-width: 968px){
+	.me-container{
+		display: block;	
+	}
+}
+

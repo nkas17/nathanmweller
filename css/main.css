@@ -54,7 +54,7 @@ table {
 
 /*********** end of reset **********/
 body {
-  color: #000;
+  color: #282727;
   background: url("../imgs/mtn.jpg") black;
   background-size: cover;
   background-attachment: fixed;
@@ -66,6 +66,41 @@ body {
   right: 0;
   position: absolute;
   z-index: -1;   
+}
+
+h1 {
+  font: 3em Herculanum;
+  font-weight: bold;
+  /* background: rgba(127, 171, 240, 0.5); */
+}
+
+h2{
+  font: 2.2em Herculanum;
+}
+section h2 {
+  background: rgba(231, 231, 231, 0.68);
+  border-bottom: 2px solid #3ba5d6;
+  padding: 10px;
+}
+
+h3{
+  font-size: 1.4em;
+  margin: 1% 0;
+  border-bottom: 2px solid #3ba5d6;
+  padding: 8px;
+}
+
+p{
+  margin-right: 1%;
+}
+
+blockquote {
+  margin: 0 4%;
+  padding: 1%;
+  border-top: 2px dashed #3ba5d6;
+  border-bottom: 2px dashed #3ba5d6;
+  background: rgba(33, 104, 169, 0.05);
+  font-family: monospace;
 }
 
 .page-wrapper{
@@ -89,25 +124,6 @@ body {
   z-index: -1;   
 } */
 
-h2{
-  font-size: 1.2em;
-  margin: 1%;
-  border-bottom: 2px solid #3ba5d6;
-}
-
-p{
-  margin-right: 1%;
-}
-
-blockquote {
-  margin: 0 4%;
-  padding: 1%;
-  border-top: 2px dashed #3ba5d6;
-  border-bottom: 2px dashed #3ba5d6;
-  background: rgba(33, 104, 169, 0.05);
-  font-family: monospace;
-}
-
 .wrapper {
   width: 100%;
   display: flex;
@@ -124,13 +140,6 @@ blockquote {
   flex: 1 1 20%;
   text-align: center;
   /* border: 2px solid red; */
-}
-
-h1 {
-  font: 3em Herculanum;
-  font-weight: bold;
-  color: #282727;
-  /* background: rgba(127, 171, 240, 0.5); */
 }
 
 .header p {
@@ -194,7 +203,6 @@ section{
 
 article{
   background: rgba(249, 250, 250, 0.75);
-  padding: 2%;
 }
 
 article:last-child {
@@ -205,6 +213,36 @@ article p{
   padding: 0 0 10px 10px;
 }
 
+footer{
+  font-size: .5em;  
+}
+
+li{
+  display: inline;
+  padding: 5px;
+}
+
+footer li{
+  line-height: 25px;
+  padding: 15px;
+  color: #5C6D77;
+}
+
+footer li i{
+  color: #5C6D77;
+}
+
+footer li i:hover{
+  color: black;
+}
+
+.mobile{
+  display: inline;
+}
+
+.desktop{
+  display: none;
+}
 
 
 @media (hover: hover) {
@@ -225,7 +263,7 @@ article p{
   }
 
   .header {
-    flex: 2.5 1 20%;
+    flex: 1 1 44%;
     text-align: left;
   }
 
@@ -239,5 +277,16 @@ article p{
 
   .me-container {
     margin-top: 1%;
+    flex: 1 1;
   }
+}
+
+@media only screen and (min-width: 768px){
+  .mobile{
+    display: none;
+  }
+    .desktop{
+      display: inline;
+      font-size: 1.5em;  
+    }
 }

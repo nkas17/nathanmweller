@@ -55,7 +55,7 @@ table {
 /*********** end of reset **********/
 body {
   color: #282727;
-  background: url("../imgs/mtn.jpg") black;
+  background: url("../imgs/mtn-min.jpg") black;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -101,6 +101,11 @@ blockquote {
   border-bottom: 2px dashed #3ba5d6;
   background: rgba(33, 104, 169, 0.05);
   font-family: monospace;
+}
+
+em {
+  color: #3ba5d6;
+  font-size: 1.2em;
 }
 
 .page-wrapper{
@@ -286,7 +291,7 @@ footer li i{
   
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 780px){
   .mobile{
     display: none;
   }

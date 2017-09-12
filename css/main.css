@@ -225,15 +225,10 @@ li{
 footer li{
   line-height: 25px;
   padding: 15px;
-  color: #5C6D77;
 }
 
 footer li i{
-  color: #5C6D77;
-}
-
-footer li i:hover{
-  color: black;
+  color: #282727;
 }
 
 .mobile{
@@ -251,6 +246,9 @@ footer li i:hover{
     transform: scale(1.5);
   }
   .nav a:hover{
+    color: black;
+  }
+  footer li i:hover{
     color: black;
   }
 }
@@ -279,6 +277,13 @@ footer li i:hover{
     margin-top: 1%;
     flex: 1 1;
   }
+  footer li i{
+    color: #5C6D77;
+  }
+  footer li{
+    color: #5C6D77;
+  }
+  
 }
 
 @media only screen and (min-width: 768px){

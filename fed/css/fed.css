@@ -1,3 +1,5 @@
+
+.mdn-banner ,
 .me-container{
 	display: none;	
 }
@@ -6,5 +8,8 @@
 	.me-container{
 		display: block;	
 	}
+	.mdn-banner {
+		float: right;
+		display: block;
+	}
 }
-

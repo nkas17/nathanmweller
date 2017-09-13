@@ -35,6 +35,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   font: 16px helvetica;
+  line-height: 1.6em;
 }
 ol, ul {
   list-style: none;
@@ -100,7 +101,12 @@ blockquote {
   border-top: 2px dashed #3ba5d6;
   border-bottom: 2px dashed #3ba5d6;
   background: rgba(33, 104, 169, 0.05);
-  font-family: monospace;
+  font-family: "Comic Sans MS", sans-serif;
+  ;
+}
+
+.div-link {
+  text-decoration: none;
 }
 
 em {
@@ -236,15 +242,6 @@ footer li i{
   color: #282727;
 }
 
-.mobile{
-  display: inline;
-}
-
-.desktop{
-  display: none;
-}
-
-
 @media (hover: hover) {
   .me:hover{
     transition: all 200ms ease-in;
@@ -289,14 +286,4 @@ footer li i{
     color: #5C6D77;
   }
   
-}
-
-@media only screen and (min-width: 780px){
-  .mobile{
-    display: none;
-  }
-    .desktop{
-      display: inline;
-      font-size: 1.5em;  
-    }
 }

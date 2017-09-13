@@ -1,0 +1,14 @@
+.mdn-banner ,
+.me-container{
+	display: none;	
+}
+
+@media only screen and (min-width: 980px){
+	.me-container{
+		display: block;	
+	}
+	.mdn-banner {
+		float: right;
+		display: block;
+	}
+}

@@ -10,6 +10,10 @@ article header .item{
 	padding: 10px;
 }
 
+.blog-entry{
+	margin-bottom: 1.5%;
+}
+
 .blog-entry li {
 	display: block;
 }
@@ -27,6 +31,17 @@ article header .item{
 	display: none;	
 
 }
+
+.blog-entry footer a:link,
+.blog-entry footer a:visited{
+	font-size: 1.5em;
+	color: #3ba5d6;
+}
+
+.blog-entry footer a:hover{
+	color: #000000;
+}
+
 
 @media only screen and (min-width: 980px){
 

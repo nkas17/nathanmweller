@@ -1,0 +1,24 @@
+{
+  "name": "nathanmweller",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkas17/nathanmweller.git"
+  },
+  "keywords": [
+    "nathanmweller"
+  ],
+  "author": "nathan m weller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nkas17/nathanmweller/issues"
+  },
+  "homepage": "https://github.com/nkas17/nathanmweller#readme",
+  "dependencies": {}
+}

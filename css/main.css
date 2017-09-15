@@ -34,7 +34,7 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 body {
-  font: 16px helvetica;
+  font: 18px helvetica;
   line-height: 1.6em;
 }
 ol, ul {
@@ -69,6 +69,11 @@ body {
   z-index: -1;   
 }
 
+article header{
+  border-bottom: 2px solid #3ba5d6;
+  padding: 8px;
+}
+
 h1 {
   font: 3em Herculanum;
   font-weight: bold;
@@ -78,7 +83,12 @@ h1 {
 h2{
   font: 2.2em Herculanum;
 }
-section h2 {
+
+h6{
+  font-size: .8em;
+}
+
+.content-wrap h2 {
   background: rgba(231, 231, 231, 0.68);
   border-bottom: 2px solid #3ba5d6;
   padding: 10px;
@@ -86,9 +96,6 @@ section h2 {
 
 h3{
   font-size: 1.4em;
-  margin: 1% 0;
-  border-bottom: 2px solid #3ba5d6;
-  padding: 8px;
 }
 
 p{
@@ -96,7 +103,7 @@ p{
 }
 
 blockquote {
-  margin: 0 4%;
+  margin: 2% 4%;
   padding: 1%;
   border-top: 2px dashed #3ba5d6;
   border-bottom: 2px dashed #3ba5d6;
@@ -120,27 +127,18 @@ em {
   widows: 100%;
   overflow: auto;
 }
-/* body::after {
-  content: "";
-  background: url("../imgs/mtn.jpg") black;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  opacity: 0.75;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;   
-} */
+
+.content{
+  background-color: whitesmoke;
+	padding: 10px;
+}
 
 .wrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
+  justify-content: space-evenly;
+} 
 
 .item {
   flex: 1 1 auto;
@@ -156,6 +154,24 @@ em {
 .header p {
   font: 1.5em cursive;
   /* background: rgba(127, 171, 240, 0.5); */
+}
+
+aside h6{
+	margin-left: .8em;
+}
+
+aside.item{
+	margin-left: 0;
+}
+
+.promo{
+	background-color: whitesmoke;
+	padding: 10px;
+}
+
+.mdn-banner {
+  display: block;
+  margin:	auto;
 }
 
 .nav {
@@ -207,7 +223,7 @@ li{
   transform: scale(1);
 }
 
-section{
+.content-wrap{
   color: black;
   margin: 0 2% 2% 2%;
 }
@@ -221,7 +237,7 @@ article:last-child {
 }
 
 article p{
-  padding: 0 0 10px 10px;
+  padding: 10px;
 }
 
 footer{

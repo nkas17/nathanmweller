@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- Global Site Tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106470072-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments)};
+			gtag('js', new Date());
+
+			gtag('config', 'UA-106470072-1');
+		</script>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -56,12 +65,13 @@
 				</div>
 			</div>
 				<div class="wrapper">
-					<div class="item">
-						<section>
+					<div class="item content-wrap">
 							<h2>Front-end Development</h2>
 							<article class="wrapper">	
-								<div class="item">
-									<h3>Resources</h3>
+								<div class="item content">
+										<header>
+											<h3>Resources</h3>
+										</header>
 									<p>
 										MDN - <a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network</a> is a fantastic resource for learning about the front-end -
 										<a class="div-link" href="https://developer.mozilla.org/en-US/">
@@ -107,14 +117,15 @@
 												</a>
 										</p>
 								</div>
-								<div class="item">
-									<a class="mdn-promo" href="https://developer.mozilla.org/en-US/">
-										<img class="mdn-banner" src="../imgs/MDN_promoBanner_120x240px_v2.png" alt="mdn">
-									</a>
-								</div>
+								<aside class="item">
+										<article class="promo">
+											<a class="mdn-promo" href="https://developer.mozilla.org/en-US/">
+												<img class="mdn-banner" src="../imgs/MDN_promoBanner_120x240px_v2.png" alt="mdn">
+											</a>
+										</article>
+									</aside>
 							</article>
-						</section>
-					</div>
+						</div>
 				</div>
 			</div>	
 	</body>

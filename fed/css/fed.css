@@ -5,11 +5,23 @@
 }
 
 @media only screen and (min-width: 980px){
+	.content-wrap .item{
+		flex: 2.55;
+	}
+
+	.content-wrap aside.item{
+		flex: 1;
+	}
+
+	article header.wrapper {
+		flex-direction: column;
+	}
+	
 	.me-container{
 		display: block;	
 	}
 	.mdn-banner {
-		float: right;
 		display: block;
+		margin:	auto;
 	}
 }

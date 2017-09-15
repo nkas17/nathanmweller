@@ -88,10 +88,21 @@ h6{
   font-size: .8em;
 }
 
-.content-wrap h2 {
+.content-wrap header {
   background: rgba(231, 231, 231, 0.68);
   border-bottom: 2px solid #3ba5d6;
   padding: 10px;
+	flex-direction: row;
+}
+
+.content-wrap i{
+	text-align: right;
+	font-size: 2.2em;
+	cursor: pointer;    
+	color: #282727;
+}
+.content-wrap i:hover{
+	color: black;
 }
 
 h3{
@@ -293,7 +304,11 @@ footer li i{
   .me-container {
     margin-top: 1%;
     flex: 1 1;
-  }
+	}
+	
+.content-wrap i{
+	display: none;
+}
 
 	.promo{
 		margin-top: 4%;

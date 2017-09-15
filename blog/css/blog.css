@@ -22,10 +22,6 @@ article header .item{
 	margin-left: 4%;
 }
 
-.promo{
-	margin-top: 4%;
-}
-
 .mdn-banner ,
 .me-container{
 	display: none;	
@@ -60,8 +56,10 @@ article header .item{
 	.me-container{
 		display: block;	
 	}
+
 	.mdn-banner {
 		display: block;
 		margin:	auto;
 	}
+
 }

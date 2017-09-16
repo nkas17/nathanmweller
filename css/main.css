@@ -96,13 +96,14 @@ h6{
 }
 
 .content-wrap i{
-	text-align: right;
+	float: right;
 	font-size: 2.2em;
-	cursor: pointer;    
-	color: #282727;
+	color: #5C6D77;
 }
-.content-wrap i:hover{
+
+.content-wrap i:hover::before{
 	color: black;
+	cursor: pointer;
 }
 
 h3{
@@ -324,4 +325,28 @@ footer li i{
     color: #5C6D77;
   }
   
+}
+
+
+.burger-menu {
+  display: none;
+}
+
+.burger-menu:checked ~ .menu {
+	display: block;
+	position: fixed;
+	top: 326px;
+	right: 28px;
+	background-color: rgb(141, 194, 218);
+	border: 2px solid #5C6D77;
+	box-shadow: #5C6D77 2px 2px 2px;
+}
+
+.hamburger {
+  display:block;
+  
+}
+
+.menu {
+   display:none;
 }

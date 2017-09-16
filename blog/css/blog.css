@@ -3,6 +3,10 @@ article header .item{
 	margin: 0;
 }
 
+.article-list{
+	display: none;
+}
+
 .promo,
 .article-list,
 .blog-entry{
@@ -51,6 +55,10 @@ article header .item{
 
 	article header.wrapper {
 		flex-direction: column;
+	}
+
+	.article-list{
+		display: block;
 	}
 	
 	.me-container{

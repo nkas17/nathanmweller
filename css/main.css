@@ -250,6 +250,7 @@ li{
   margin: 0 2% 2% 2%;
 }
 
+header+div.wrapper,
 article{
   background: rgba(249, 250, 250, 0.75);
 }

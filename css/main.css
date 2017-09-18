@@ -35,7 +35,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   font: 18px helvetica, arial, sans-serif;
-  line-height: 1.6em;
+  line-height: 1.6rem;
 }
 ol, ul {
   list-style: none;
@@ -54,6 +54,17 @@ table {
 }
 
 /*********** end of reset **********/
+
+/*****webfonts******/
+@font-face {
+  font-family: "Cronus Round";
+  src: url("../fonts/Cronus Round.otf") format("opentype");
+}
+@font-face {
+  font-family: "Boogaloo-Regular";
+  src: url("../fonts/Boogaloo-Regular.ttf") format("truetype");
+}
+/*********webfonts****/
 body {
   color: #282727;
   background: url("../imgs/mtn-min.jpg") black;
@@ -75,17 +86,17 @@ article header{
 }
 
 h1 {
-  font: 3em herculanum, helvetica, arial, sans-serif;
+  font: 3rem Boogaloo-Regular, "Cronus Round",herculanum, helvetica, arial, sans-serif;
   font-weight: bold;
   /* background: rgba(127, 171, 240, 0.5); */
 }
 
 h2{
-  font: 2.2em herculanum, helvetica, arial, sans-serif;
+  font: 2.2rem helvetica, arial, sans-serif;
 }
 
 h6{
-  font-size: .8em;
+  font-size: .8rem;
 }
 
 .content-wrap header {
@@ -97,7 +108,7 @@ h6{
 
 .content-wrap i{
 	float: right;
-	font-size: 2.2em;
+	font-size: 2.2rem;
 	color: #5C6D77;
 }
 
@@ -107,7 +118,7 @@ h6{
 }
 
 h3{
-  font-size: 1.4em;
+  font-size: 1.4rem;
 }
 
 p{
@@ -164,12 +175,12 @@ em {
 }
 
 .header p {
-  font: 1.5em "Comic Sans MS", cursive;
+  font: 1.5rem "Comic Sans MS", cursive;
   /* background: rgba(127, 171, 240, 0.5); */
 }
 
 aside h6{
-	margin-left: .8em;
+	margin-left: .8rem;
 }
 
 aside.item{
@@ -187,7 +198,7 @@ aside.item{
 
 .nav {
   /* border: 2px solid blue; */
-  font: 1.2em herculanum, helvetica, arial, sans-serif;;
+  font: 1.2rem Boogaloo-Regular, herculanum, helvetica, arial, sans-serif;;
   font-weight: bold;
   text-align: center;
 }
@@ -201,7 +212,7 @@ aside.item{
 
 .nav a.selected {
   color: black;
-  font-size: 1.2em;
+  font-size: 1.8rem;
 }
 
 
@@ -252,7 +263,11 @@ article p{
 }
 
 footer{
-  font-size: .5em;  
+  font-size: .5rem;  
+}
+
+footer a{
+  margin: 0 5px;
 }
 
 li{
@@ -312,7 +327,6 @@ footer li i{
 }
 
 	.promo{
-		margin-top: 4%;
 		display: block;
 		background-color: whitesmoke;
 		padding: 10px;

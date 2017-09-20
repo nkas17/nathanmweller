@@ -26,12 +26,6 @@ article header .item{
 	margin-left: 4%;
 }
 
-.mdn-banner ,
-.me-container{
-	display: none;	
-
-}
-
 .blog-entry footer a:link,
 .blog-entry footer a:visited{
 	font-size: 1.5em;
@@ -52,13 +46,6 @@ article header .item{
 
 .definition{
 	font-style: italic;
-}
-
-hr {
-	height: 2px;
-	color: #3ba5d6;
-	background-color: #3ba5d6;
-	border: none;
 }
 
 @media only screen and (min-width: 980px){
@@ -83,10 +70,9 @@ hr {
 		display: block;	
 	}
 
-	.w3c-banner,
-	.mdn-banner {
-		display: block;
-		margin:	auto;
+	.promo{
+    margin-top: 4%;
 	}
+
 
 }

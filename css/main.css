@@ -191,9 +191,11 @@ aside.item{
   display: none;
 }
 
-.mdn-banner {
-  display: block;
-  margin:	auto;
+.w3c-banner,
+.mdn-banner ,
+.me-container{
+	display: none;	
+
 }
 
 .nav {
@@ -290,6 +292,13 @@ footer li i{
   color: #282727;
 }
 
+hr {
+	height: 2px;
+	color: #3ba5d6;
+	background-color: #3ba5d6;
+	border: none;
+}
+
 @media (hover: hover) {
   .me:hover{
     transition: all 200ms ease-in;
@@ -307,6 +316,12 @@ footer li i{
 
 @media only screen and (min-width: 980px){
 
+	.w3c-banner,
+	.mdn-banner {
+		display: block;
+		margin:	auto;
+  }
+  
   h1 {
     font: 3.5rem Boogaloo-Regular, "Cronus Round",herculanum, helvetica, arial, sans-serif;
     font-weight: bold;
@@ -342,12 +357,11 @@ footer li i{
     flex: 1 1;
 	}
 	
-.content-wrap i{
-	display: none;
-}
+  .content-wrap i{
+    display: none;
+  }
 
 	.promo{
-    margin-top: 4%;
 		display: block;
 		background-color: whitesmoke;
 		padding: 10px;

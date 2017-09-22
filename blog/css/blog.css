@@ -57,7 +57,20 @@ aside.item{
 
 footer.me-container{
 	display: block;
+	font-size: 1.5rem;
+	line-height: 1.3;
+	margin: 5% 1%;
+	color: white;
+	background-color: #282727;
+	padding: 25px;
+	border-radius: 40%;
+	border: 2px solid black;
 }
+
+footer.me-container p{
+	margin: 8% 5%;
+}
+
 
 @media only screen and (min-width: 980px){
 

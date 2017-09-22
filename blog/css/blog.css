@@ -55,6 +55,10 @@ aside.item{
 	font-style: italic;
 }
 
+footer.me-container{
+	display: block;
+}
+
 @media only screen and (min-width: 980px){
 
 	.content-wrap .item{
@@ -81,5 +85,8 @@ aside.item{
     margin-top: 4%;
 	}
 
+	footer.me-container{
+		display: none;
+	}
 
 }

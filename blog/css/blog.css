@@ -3,8 +3,15 @@ article header .item{
 	margin: 0;
 }
 
-.article-list{
-	display: none;
+
+article header.wrapper {
+	flex-direction: column;
+}
+
+aside.item{
+	margin-left: 1%;
+	order: -1;
+	margin-bottom: 0;
 }
 
 .promo,
@@ -58,12 +65,12 @@ article header .item{
 		flex: 1;
 	}
 
-	article header.wrapper {
-		flex-direction: column;
-	}
-
 	.article-list{
 		display: block;
+	}
+
+	aside.item {
+		order: 0;
 	}
 	
 	.me-container{

@@ -4,6 +4,12 @@
 	display: none;	
 }
 
+@media only screen and (max-width: 736px){
+  .header p{
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 980px){
 	.content-wrap .item{
 		flex: 2.55;

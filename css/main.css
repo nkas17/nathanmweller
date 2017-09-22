@@ -195,7 +195,7 @@ em {
 }
 
 .header p {
-  font: 1.5rem "Comic Sans MS", cursive;
+  font: 1.5rem "Comic Sans MS", "Cronus Round", Boogaloo-Regular, sans-serif;
   /* background: rgba(127, 171, 240, 0.5); */
 }
 
@@ -212,10 +212,14 @@ aside.item{
 }
 
 .w3c-banner,
-.mdn-banner ,
-.me-container{
+.mdn-banner {
 	display: none;	
 
+}
+
+
+.me-container{
+	display: block;	
 }
 
 .nav {
@@ -289,6 +293,10 @@ footer{
   font-size: .5rem;  
 }
 
+footer p{
+  font: "Comic Sans MS", Boogaloo-Regular, sans-serif;
+}
+
 footer a{
   margin: 0 5px;
 }
@@ -331,14 +339,6 @@ hr {
     color: black;
   }
 }
-
-
-@media only screen and (max-width: 736px){
-  .header p{
-    display: none;
-  }
-}
-
 
 @media only screen and (min-width: 980px){
 

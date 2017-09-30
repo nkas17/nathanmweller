@@ -17,6 +17,10 @@
 	border: 2px solid black;
 }
 
+.article__content{
+	background-color: whitesmoke;
+}
+
 @media only screen and (max-width: 667px){
   .page-header__description{
     display: none;

@@ -20,69 +20,73 @@
 		<link rel="stylesheet" href="./css/about.css">
 		<link rel="stylesheet" href="../css/font-awesome.min.css">
 	</head>
-	<body>
+	<body class="body">
 		<div class="page-wrapper">
-			<div class="wrapper">
-				<div class="header item">
-					<h1>nathan m weller</h1>
-					<p>husband, father, software architect, web developer, cook, photographer, fútbol player, gamer</p>
-					<footer>
-						<ul class="footer-links">
-									<li><a href="mailto:nathan@nathanmweller.com?subject=Reaching%20Out">
-										<i class="fa fa-envelope-o fa-2x"></i></a></li>
-									<li><a href="https://www.linkedin.com/pub/nathan-weller/52/b05/552">
-										<i class="fa fa-linkedin fa-2x"></i></a></li>
-									<li><a href="https://twitter.com/nkas17_m">
-										<i class="fa fa-twitter fa-2x"></i></a></li>
-									<li><a href="https://plus.google.com/u/0/100022763393186980494/posts/p/pub">
-										<i class="fa fa-google-plus fa-2x"></i></a></li>
-									<li><a href="https://www.facebook.com/nathan.weller.9">
-										<i class="fa fa-facebook fa-2x"></i></a></li>
-									<li><a href="tel:6168430170">
-										<i class="fa fa-phone fa-2x"></i></a></li>
-									<li><a href="sms:6168430170">
-											<i class="fa fa-comment-o fa-2x"></i></a></li>
+				<header class="page-header flex-wrapper">
+						<div class="personal-info page-header__flex-item flex-item">
+							<h1 class="page-header__title">nathan m weller</h1>
+							<p class="page-header__description">husband, father, software architect, web developer, cook, photographer, fútbol player, gamer</p>
+							<ul class="contact-info page-header__contact-info">
+								<li class="contact-info__item">
+									<a class="link" href="mailto:nathan@nathanmweller.com?subject=Reaching%20Out">
+										<i class="fa fa-envelope-o"></i></a></li>
+								<li class="contact-info__item">
+									<a class="link" href="https://www.linkedin.com/pub/nathan-weller/52/b05/552">
+										<i class="fa fa-linkedin"></i></a></li>
+								<li class="contact-info__item">
+									<a class="link" href="https://twitter.com/nkas17_m">
+										<i class="fa fa-twitter"></i></a></li>
+								<li class="contact-info__item">
+									<a class="link" href="https://plus.google.com/u/0/100022763393186980494/posts/p/pub">
+										<i class="fa fa-google-plus"></i></a></li>
+								<li class="contact-info__item">
+									<a class="link" href="https://www.facebook.com/nathan.weller.9">
+										<i class="fa fa-facebook"></i></a></li>
+								<li class="contact-info__item">
+									<a class="link" href="tel:6168430170">
+										<i class="fa fa-phone"></i></a></li>
+								<li class="contact-info__item">
+									<a class="link" href="sms:6168430170">
+										<i class="fa fa-comment-o"></i></a></li>
 							</ul>
-						</footer>
-					</div>
-				<div class="nav item">
-					<ul>
-						<li><a href="../">home</a></li>
-						<li><a href="../fed">fed</a></li>
-						<li><a href="../blog">blog</a></li>
-						<li><a class="selected" href="./">about</a></li>
-					</ul>
-				</div>
-				<div class="me-container item">
-					<img class="me" width=200 height=200 src="../imgs/nathanmweller.jpg" alt="nathan m weller"/>
-				</div>
-			</div>
-					<div class="wrapper">
-						<div class="item content-wrap">
-							<header>
-								<h2>About</h2>
+						</div>
+						<nav class="nav flex-item">
+							<ul>
+								<li class="nav__item"><a class="link nav__link" href="../">home</a></li>
+								<li class="nav__item"><a class="link nav__link " href="../fed">fed</a></li>
+								<li class="nav__item"><a class="link nav__link" href="../blog">blog</a></li>
+								<li class="nav__item"><a class="link nav__link link_selected" href="./">about</a></li>
+							</ul>
+						</nav>
+						<div class="logo flex-item">
+							<img class="logo__image" width=200 height=200 src="../imgs/nathanmweller.jpg" alt="nathan m weller" />
+						</div>
+					</header>
+					<main class="main flex-wrapper">
+						<div class="flex-item main__flex-item">
+							<header class="main__header">
+								<h2 class="header header_size_large">about</h2>
 							</header>
-							<article class="wrapper">	
-								<div class="item content">
-									<header>
-										<h3>experience</h3>
+							<article class="article flex-wrapper">	
+								<div class="flex-item article__content">
+									<header class="main__header article__header">
+										<h3 class="header header_size_medium">experience</h3>
 									</header>
-									<p>13+ years software development, 9+ years web development</p>
-								
-									<header>
-										<h3>web development</h3>
+										<p class="article__paragraph">13+ years software development, 9+ years web development</p>
+									<header class="main__header article__header">
+										<h3 class="header header_size_medium">web development</h3>
 									</header>
-									<p>JavaScript, React.js, Redux.js, Jest, Enzyme, ES2015, Lodash, jQuery, Backbone.js, Underscore.js, HTML, CSS, Sass, Bootstrap, responsive design, Google Analytics, Git, PRPC</p>
-									<header>
-										<h3>education</h3>
+									<p class="article__paragraph">JavaScript, ES2015, Node.js, npm, React.js, Redux.js, Jest, Enzyme, Lodash, jQuery, Backbone.js, Underscore.js, HTML, CSS, Sass, Bootstrap, responsive design, Google Analytics, Git, PRPC</p>
+									<header class="main__header article__header">
+										<h3 class="header header_size_medium">education</h3>
 									</header>
-									<p>BS in Computer Science with honors from Michigan State University</p>
-									<p><a href="https://www.codeschool.com/users/2817163">Code School Badges</a></p>
-									<header>
-										<h3>creations</h3>
+									<p class="article__paragraph">BS in Computer Science with honors from Michigan State University</p>
+									<p class="article__paragraph"><a class="link" href="https://www.codeschool.com/users/2817163">Code School Badges</a></p>
+									<header class="main__header article__header">
+										<h3 class="header header_size_medium">creations</h3>
 									</header>
-									<p><a href="http://games.nathanmweller.com">games</a>, who doesn't love games</p>
-									<p><a href="http://recipes.nathanmweller.com">recipes</a>, and more...(a secure site)</p>
+									<p class="article__paragraph"><a class="link" href="http://games.nathanmweller.com">games</a>, who doesn't love games</p>
+									<p class="article__paragraph"><a class="link" href="http://recipes.nathanmweller.com">recipes</a>, and more...(a secure site)</p>
 								</div>
 							</article>
 						</div>

@@ -11,10 +11,6 @@
 	background-color: whitesmoke;
 }
 
-.blog-entry{
-	margin-bottom: 1.5%;
-}
-
 .blog-entry li {
 	display: block;
 }
@@ -82,18 +78,21 @@
 			flex-direction: column;
 		}
 
+		.aside{
+			min-width: 335px;
+		}
 		.article__flex-item{
-			flex: 2.6;
+			flex: 2.2;
 		}
 
 		.article__flex-item:nth-child(even){
 			flex: 1;
 			order: 1;
-			margin: 1% 1% 1% 0;
+			margin: 1.5% 1.5% 1.5% 0;
 		}
 		
 		.promo{
-			margin-top: 3.5%;
+			margin-top: 5%;
 		}
 		.logo{
 			display: block;	

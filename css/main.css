@@ -187,6 +187,10 @@ table {
 .text_size_small{
 	font-size: .8rem;
 }
+.font_weight_bold{
+  font-weight: bold;
+}
+
 .article__header{
 	/* font-family: helvetica, arial, sans-serif; */
 }
@@ -300,6 +304,16 @@ table {
 
 .details__paragraph{
   text-indent: 2rem;  
+}
+
+.pre {
+  display: block;
+  margin: 1.5% 6%;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: #E0DFDF;
+	background-color: rgba(36, 36, 36, 0.93);
+	overflow-x: scroll;
 }
 
 .w3c-banner,

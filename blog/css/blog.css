@@ -11,13 +11,6 @@
 	background-color: whitesmoke;
 }
 
-.blog-entry li {
-	display: block;
-}
-
-.blog-entry ul{
-	margin-left: 4%;
-}
 .footer__link{
 	padding: 10px;
 }
@@ -29,10 +22,6 @@
 
 .footer__link:hover{
 	color: #000000;
-}
-
-.list-style-square{
-	list-style: square;
 }
 
 .details{

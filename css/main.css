@@ -316,6 +316,18 @@ table {
 	overflow-x: scroll;
 }
 
+.list{
+	margin: 0 0 0 7%;
+}
+
+.list-style-square{
+	list-style: square;
+}
+
+.list-style-circle{
+  list-style: circle;
+}
+
 .w3c-banner,
 .mdn-banner {
 	display: none;	

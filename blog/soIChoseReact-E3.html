@@ -31,33 +31,55 @@
 				<ul class="contact-info page-header__contact-info">
 					<li class="contact-info__item">
 						<a class="link" href="mailto:nathan@nathanmweller.com?subject=Reaching%20Out">
-										<i class="fa fa-envelope-o"></i></a></li>
+							<i class="fa fa-envelope-o"></i>
+						</a>
+					</li>
 					<li class="contact-info__item">
 						<a class="link" href="https://www.linkedin.com/pub/nathan-weller/52/b05/552">
-										<i class="fa fa-linkedin"></i></a></li>
+							<i class="fa fa-linkedin"></i>
+						</a>
+					</li>
 					<li class="contact-info__item">
 						<a class="link" href="https://twitter.com/nkas17_m">
-										<i class="fa fa-twitter"></i></a></li>
+							<i class="fa fa-twitter"></i>
+						</a>
+					</li>
 					<li class="contact-info__item">
 						<a class="link" href="https://plus.google.com/u/0/100022763393186980494/posts/p/pub">
-										<i class="fa fa-google-plus"></i></a></li>
+							<i class="fa fa-google-plus"></i>
+						</a>
+					</li>
 					<li class="contact-info__item">
 						<a class="link" href="https://www.facebook.com/nathan.weller.9">
-										<i class="fa fa-facebook"></i></a></li>
+							<i class="fa fa-facebook"></i>
+						</a>
+					</li>
 					<li class="contact-info__item">
 						<a class="link" href="tel:6168430170">
-										<i class="fa fa-phone"></i></a></li>
+							<i class="fa fa-phone"></i>
+						</a>
+					</li>
 					<li class="contact-info__item">
 						<a class="link" href="sms:6168430170">
-										<i class="fa fa-comment-o"></i></a></li>
+							<i class="fa fa-comment-o"></i>
+						</a>
+					</li>
 				</ul>
 			</div>
 			<nav class="nav flex-item">
 				<ul>
-					<li class="nav__item"><a class="link nav__link" href="../">home</a></li>
-					<li class="nav__item"><a class="link nav__link " href="../fed">fed</a></li>
-					<li class="nav__item"><a class="link nav__link link_selected" href="./">blog</a></li>
-					<li class="nav__item"><a class="link nav__link" href="../about">about</a></li>
+					<li class="nav__item">
+						<a class="link nav__link" href="../">home</a>
+					</li>
+					<li class="nav__item">
+						<a class="link nav__link " href="../fed">fed</a>
+					</li>
+					<li class="nav__item">
+						<a class="link nav__link link_selected" href="./">blog</a>
+					</li>
+					<li class="nav__item">
+						<a class="link nav__link" href="../about">about</a>
+					</li>
 				</ul>
 			</nav>
 			<div class="logo flex-item">
@@ -67,9 +89,11 @@
 		<main class="main flex-wrapper">
 			<div class="flex-item main__flex-item">
 				<header class="main__header">
-					<h2 class="header header_size_large">blog - so i chose react <span class="dilbert">
+					<h2 class="header header_size_large">blog - so i chose react
+						<span class="dilbert">
 							&nbsp;
-						</span></h2>
+						</span>
+					</h2>
 				</header>
 				<article class="article flex-wrapper">
 					<div class="flex-item article__flex-item article__content">
@@ -79,31 +103,123 @@
 								<h6 class="header header_size_small flex-item">Oct 06, 2017 ~ nathan m weller</h6>
 							</header>
 							<p class="article__paragraph">
-									Last time we got all setup with React, Babel and Webpack.  Our environment was all set to start coding react components with JSX and ES2015+.  However, we can automate a few things to help enhance our development experience. 
+								Last time we got all setup with React, Babel and Webpack.  Our environment was all set to start coding react components with
+								JSX and ES2015+.  However, we can automate a few things to help enhance our development experience.
 							</p>
 							<ul class="list list-style-square">
 								<li>
 									<a class="link" href="https://webpack.js.org/concepts/hot-module-replacement/">Hot Module Replacement</a> with webpack-dev-server
 								</li>
 								<li>
-									Use <a class="link" href="https://yarnpkg.com/en/docs/package-json#toc-tasks">Yarn</a> scripts in our package.json file
+									Use
+									<a class="link" href="https://yarnpkg.com/en/docs/package-json#toc-tasks">Yarn</a> scripts in our package.json file
 								</li>
 								<li>
-									Static analysis with <a class="link" href="https://eslint.org/">ESLint</a>
+									Static analysis with
+									<a class="link" href="https://eslint.org/">ESLint</a>
 								</li>
 								<li>
-									Automated testing with <a class="link" href="https://facebook.github.io/jest/">Jest</a>
+									Automated testing with
+									<a class="link" href="https://facebook.github.io/jest/">Jest</a>
 								</li>
 							</ul>
 							<p class="article__paragraph">
-									<span class="font_weight_bold">Hot Module Replacement with webpack-dev-server
-										</span>
-								</p>
-								<p class="article__paragraph">
-										Let's setup webpack-dev-server first.  
-										First we need to add that package so like the others type 
-										this in the terminal:
+								<span class="font_weight_bold">Hot Module Replacement with webpack-dev-server
+								</span>
+							</p>
+							<p class="article__paragraph">
+								Let's setup webpack-dev-server first.  First we need to add that package so like the others type this in the terminal:
+							</p>
+							<pre class="pre">
+								<code class="code">
+  $ yarn add --dev webpack-dev-server
+
+  $ npm install --dev-save webpack-dev-server</code>
+							</pre>
+							<p class="article__paragraph">
+								Next we need to tell webpack dev server where to look for our content.  Add this to your webpack.config.json file between
+								resolve section and output section:
+							</p>
+							<pre class="pre">
+								<code class="code">
+  devServer: {
+    contentBase: './dist',
+    hot: true,
+  },</code>
+									</pre>
+							<p class="article__paragraph">
+								Next add this in the plugins section after the CopyWebpackPlugin:
+							</p>
+							<pre class="pre">
+								<code class="code">
+  new webpack.HotModuleReplacementPlugin(),</code>
+									</pre>
+							<p class="article__paragraph">
+								And there you have it. That's it to getting hot loading setup with webpack-dev-server.   Your webpack.config.js should look
+								like the following:
+							</p>
+							<pre class="pre">
+								<code class="code">
+  const webpack = require('webpack');
+  const path = require('path');
+  const CopyWebpackPlugin = require('copy-webpack-plugin');
+ 
+  const config = {
+    entry: `${path.resolve(__dirname, 'src')}/index.jsx`,
+    resolve: {
+      extensions: ['.js', '.jsx', '.json', '.css', '.scss'],
+    },
+    devServer: {
+			contentBase: './dist',
+			hot: true,
+    },
+    output: {
+      path: path.resolve(__dirname, 'dist'),
+      filename: 'bundle.js',
+    },
+    plugins: [
+      new CopyWebpackPlugin([
+        { from: './src/index.html' }    
+      ]),
+      new webpack.HotModuleReplacementPlugin(),			
+    ],
+    module: {
+      loaders: [
+        {
+          test: /\.jsx?/,
+          include: `${path.resolve(__dirname, 'src')}`,
+          loader: 'babel-loader'
+        }
+      ]
+    }
+  };
+ 
+  module.exports = config;</code>
+									</pre>
+									<p class="article__paragraph">
+										Test that hot-reloading works by starting your dev-server like so:
+									</p> 
+									<pre class="pre">
+										<code class="code">
+  $ ./node_modules/.bin/webpack-dev-server</code>
+									</pre>
+									<p class="article__paragraph">
+										Then open your browser and navigate to <a class="link" href="http://localhost:8080">http://localhost:8080</a> then modify your App.jsx and you will see the update without refreshing the browser.  
 									</p>
+							<p class="article__paragraph">
+									<span class="font_weight_bold">Adding ESLint</span>
+							</p>
+							<p class="article__paragraph">
+									ESLint is used to analyze our code to check for anything from code style consistency to finding common coding bugs.
+							</p>
+							<blockquote class="article__blockquote">
+									"ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs."
+							</blockquote>
+							<p class="article__paragraph">
+									ESLint can also be configured with custom rules.  There are a couple eslint extensions that others have built that I also highly recommend:
+							</p>
+
+
 							<p class="article__paragraph">
 								...more coming soon
 							</p>
@@ -157,12 +273,12 @@
 						</div>
 						<div class="promo">
 							<a class="link mdn-promo" href="https://developer.mozilla.org/en-US/">
-											<img class="mdn-banner" src="../imgs/MDN_promoBanner_120x240px_v2.png" alt="mdn">
-										</a>
+								<img class="mdn-banner" src="../imgs/MDN_promoBanner_120x240px_v2.png" alt="mdn">
+							</a>
 							<hr class="hr" />
 							<a class="link w3c-promo" href="https://www.w3.org/">
-											<img class="w3c-banner" src="../imgs/w3c.png" alt="w3c">
-										</a>
+								<img class="w3c-banner" src="../imgs/w3c.png" alt="w3c">
+							</a>
 						</div>
 					</aside>
 					<footer class="footer flex-item">

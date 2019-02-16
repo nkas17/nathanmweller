@@ -31,33 +31,55 @@
 				<ul class="contact-info page-header__contact-info">
 					<li class="contact-info__item">
 						<a class="link" href="mailto:nathan@nathanmweller.com?subject=Reaching%20Out">
-										<i class="fa fa-envelope-o"></i></a></li>
+							<i class="fa fa-envelope-o"></i>
+						</a>
+					</li>
 					<li class="contact-info__item">
 						<a class="link" href="https://www.linkedin.com/pub/nathan-weller/52/b05/552">
-										<i class="fa fa-linkedin"></i></a></li>
+							<i class="fa fa-linkedin"></i>
+						</a>
+					</li>
 					<li class="contact-info__item">
 						<a class="link" href="https://twitter.com/nkas17_m">
-										<i class="fa fa-twitter"></i></a></li>
+							<i class="fa fa-twitter"></i>
+						</a>
+					</li>
 					<li class="contact-info__item">
 						<a class="link" href="https://plus.google.com/u/0/100022763393186980494/posts/p/pub">
-										<i class="fa fa-google-plus"></i></a></li>
+							<i class="fa fa-google-plus"></i>
+						</a>
+					</li>
 					<li class="contact-info__item">
 						<a class="link" href="https://www.facebook.com/nathan.weller.9">
-										<i class="fa fa-facebook"></i></a></li>
+							<i class="fa fa-facebook"></i>
+						</a>
+					</li>
 					<li class="contact-info__item">
 						<a class="link" href="tel:6168430170">
-										<i class="fa fa-phone"></i></a></li>
+							<i class="fa fa-phone"></i>
+						</a>
+					</li>
 					<li class="contact-info__item">
 						<a class="link" href="sms:6168430170">
-										<i class="fa fa-comment-o"></i></a></li>
+							<i class="fa fa-comment-o"></i>
+						</a>
+					</li>
 				</ul>
 			</div>
 			<nav class="nav flex-item">
 				<ul>
-					<li class="nav__item"><a class="link nav__link" href="../">home</a></li>
-					<li class="nav__item"><a class="link nav__link " href="../fed">fed</a></li>
-					<li class="nav__item"><a class="link nav__link link_selected" href="./">blog</a></li>
-					<li class="nav__item"><a class="link nav__link" href="../about">about</a></li>
+					<li class="nav__item">
+						<a class="link nav__link" href="../">home</a>
+					</li>
+					<li class="nav__item">
+						<a class="link nav__link " href="../fed">fed</a>
+					</li>
+					<li class="nav__item">
+						<a class="link nav__link link_selected" href="./">blog</a>
+					</li>
+					<li class="nav__item">
+						<a class="link nav__link" href="../about">about</a>
+					</li>
 				</ul>
 			</nav>
 			<div class="logo flex-item">
@@ -67,9 +89,11 @@
 		<main class="main flex-wrapper">
 			<div class="flex-item main__flex-item">
 				<header class="main__header">
-					<h2 class="header header_size_large">blog - so i chose react <span class="dilbert">
+					<h2 class="header header_size_large">blog - so i chose react
+						<span class="dilbert">
 							&nbsp;
-						</span></h2>
+						</span>
+					</h2>
 				</header>
 				<article class="article flex-wrapper">
 					<div class="flex-item article__flex-item article__content">
@@ -122,17 +146,17 @@
   $ npm install --dev-save webpack</code>
 									</pre>
 							<p class="article__paragraph">
-								This will add webpack to your package.json file in the dependency section and update your yarn.lock file.  
-								Once this completes we can create the webpack configuration file:
+								This will add webpack to your package.json file in the dependency section and update your yarn.lock file.  Once this completes
+								we can create the webpack configuration file:
 							</p>
 							<pre class="pre">
 								<code class="code">
   $ touch webpack.config.js</code>
 							</pre>
 							<p class="article__paragraph">
-									Update the config file with the following:
-								</p>
-								<pre class="pre">
+								Update the config file with the following:
+							</p>
+							<pre class="pre">
 									<code class="code">
   const path = require('path');
  
@@ -146,30 +170,27 @@
 
   module.exports = config;</code>
 								</pre>
-								<p class="article__paragraph">This is the least required in the config file, it simple needs an entry 
-									point and on output location.  The entry holds the React application code 
-									base and the output is the directory where the built bundle.js file will 
-									be placed.
-								</p>
-								<p class="article__paragraph">
-									Lastly we need to tell webpack to copy our index.html file 
-									over to the dist directory.  First is to install a webpack plugin:
-								</p>
-								<pre class="pre">
+							<p class="article__paragraph">This is the least required in the config file, it simple needs an entry point and on output location.  The entry holds
+								the React application code base and the output is the directory where the built bundle.js file will be placed.
+							</p>
+							<p class="article__paragraph">
+								Lastly we need to tell webpack to copy our index.html file over to the dist directory.  First is to install a webpack plugin:
+							</p>
+							<pre class="pre">
 										<code class="code">
   $ yarn add --dev copy-webpack-plugin
 
   $ npm install --dev-save copy-webpack-plugin</code>
 									</pre>
-								<p class="article__paragraph">
-										Then we need to import that in, at the top of your webpack.config.js file add this:
-								</p>
+							<p class="article__paragraph">
+								Then we need to import that in, at the top of your webpack.config.js file add this:
+							</p>
 							<pre class="pre">
 								<code class="code">
   const CopyWebpackPlugin = require('copy-webpack-plugin');</code>
 							</pre>
 							<p class="article__paragraph">
-									Then in the config object add the following after the output property:
+								Then in the config object add the following after the output property:
 							</p>
 							<pre class="pre">
 									<code class="code">
@@ -180,7 +201,7 @@
   ],</code>
 								</pre>
 							<p class="article__paragraph">
-									Now that webpack is all set we need that index.jsx file we are referring to in the config file.  Let's create that:									
+								Now that webpack is all set we need that index.jsx file we are referring to in the config file.  Let's create that:
 							</p>
 							<pre class="pre">
 									<code class="code">
@@ -188,7 +209,7 @@
   $ touch ./src/index.jsx	</code>
 							</pre>
 							<p class="article__paragraph">
-									And add the following:										
+								And add the following:
 							</p>
 							<pre class="pre">
 								<code class="code">
@@ -196,7 +217,8 @@
 								</code>
 							</pre>
 							<p class="article__paragraph">
-									Let's add it to an html file so we can run it in the browser.  Create an index.html file in the src directory and add the following:
+								Let's add it to an html file so we can run it in the browser.  Create an index.html file in the src directory and add the
+								following:
 							</p>
 							<pre class="pre">
 								<code class="code">
@@ -214,15 +236,15 @@
   &lt;/html&gt;</code>
 							</pre>
 							<p class="article__paragraph">
-									Now type this command in the terminal:
+								Now type this command in the terminal:
 							</p>
 							<pre class="pre">
 									<code class="code">
   $ ./node_modules/.bin/webpack -d</code>
 							</pre>
 							<p class="article__paragraph">
-								That runs webpack in development mode ( -d ) and generates
-								the bundle.js file in the output directory "dist" and copies our index.html file.
+								That runs webpack in development mode ( -d ) and generates the bundle.js file in the output directory "dist" and copies our
+								index.html file.
 							</p>
 							<p class="article__paragraph">
 								Now open the index.html file in the browser and look at the console.  You will see what we logged out:
@@ -232,17 +254,14 @@
   I just created an App with Webpack!</code>
 							</pre>
 							<p class="article__paragraph">
-									<span class="font_weight_bold">Babel - install and configure</span>
+								<span class="font_weight_bold">Babel - install and configure</span>
 							</p>
 							<p class="article__paragraph">
-									React with JSX and ES2015 make life much easier.  Sure you can write React 
-									code without JSX and ES2015 but let's be real…why would you ever want to do 
-									that?  So, why babel you ask, ES2015 is still not fully supported in all 
-									browsers.  Also, with babel you can use the latest ES features from 2015 and 
-									beyond, not just ES2015.  Babel can be used alone without webpack however, 
-									to keep the build process simple we can use a babel loader for webpack.  
-									Babel is used to transpile the ES20XX code to what browsers support.  
-									Let's add the babel packages that are required to make this happen:
+								React with JSX and ES2015 make life much easier.  Sure you can write React code without JSX and ES2015 but let's be real…why
+								would you ever want to do that?  So, why babel you ask, ES2015 is still not fully supported in all browsers.  Also,
+								with babel you can use the latest ES features from 2015 and beyond, not just ES2015.  Babel can be used alone without
+								webpack however, to keep the build process simple we can use a babel loader for webpack.  Babel is used to transpile
+								the ES20XX code to what browsers support.  Let's add the babel packages that are required to make this happen:
 							</p>
 							<pre class="pre">
 									<code class="code">
@@ -251,16 +270,15 @@
   $ npm install --dev-save babel-core babel-loader babel-preset-env babel-preset-react</code>
 							</pre>
 							<p class="article__paragraph">
-								Babel-loader is used by webpack and babel-loader uses babel-preset-env 
-								and babel-preset-react to transpile our JSX and ES2015 code.  
-								We need a little configuration for babel as well:
+								Babel-loader is used by webpack and babel-loader uses babel-preset-env and babel-preset-react to transpile our JSX and ES2015
+								code.  We need a little configuration for babel as well:
 							</p>
 							<pre class="pre">
 								<code class="code">
   $ touch .babelrc</code>
 							</pre>
 							<p class="article__paragraph">
-									Then add this to the file:
+								Then add this to the file:
 							</p>
 							<pre class="pre">
 								<code class="code">
@@ -272,8 +290,8 @@
   }</code>
 							</pre>
 							<p class="article__paragraph">
-									Now we need to tell webpack to use the babel-loader library.  
-									Open webpack.config.js and add the follow to the bottom of the config object:
+								Now we need to tell webpack to use the babel-loader library.  Open webpack.config.js and add the follow to the bottom of
+								the config object:
 							</p>
 							<pre class="pre">
 									<code class="code">
@@ -287,15 +305,14 @@
     ]
   }</code>
 								</pre>
-								<p class="article__paragraph">
-									Here webpack is using the babel loader, and looking in the src directory 
-									for files with an extension .jsx.  These are the files babel will transpile.
-								</p>
-								<p class="article__paragraph">
-									Phew!  All set with webpack and babel, now for the good stuff, React!  
-									Use yarn to add react and react-dom
-								</p>
-								<pre class="pre">
+							<p class="article__paragraph">
+								Here webpack is using the babel loader, and looking in the src directory for files with an extension .jsx.  These are the
+								files babel will transpile.
+							</p>
+							<p class="article__paragraph">
+								Phew!  All set with webpack and babel, now for the good stuff, React!  Use yarn to add react and react-dom
+							</p>
+							<pre class="pre">
 									<code class="code">
   $ yarn add react react-dom
 
@@ -323,7 +340,7 @@
   );</code>
 							</pre>
 							<p class="article__paragraph">
-									Then save and run the webpack command again:
+								Then save and run the webpack command again:
 							</p>
 							<pre class="pre">
 								<code class="code">
@@ -337,8 +354,8 @@
   Hello React!</code>
 							</pre>
 							<p class="article__paragraph">
-								You can also split out the App class code to a separate 
-								file App.jsx like this(which you'll want for when we add  a a Jest test:
+								You can also split out the App class code to a separate file App.jsx like this(which you'll want for when we add  a a Jest
+								test:
 							</p>
 							<pre class="pre">
 								<code class="code">
@@ -353,7 +370,7 @@
   }</code>
 							</pre>
 							<p class="article__paragraph">
-									Which then leaves only this in index.jsx
+								Which then leaves only this in index.jsx
 							</p>
 							<pre class="pre">
 									<code class="code">
@@ -367,10 +384,9 @@
   );</code>
 							</pre>
 							<p class="article__paragraph">
-								You also need to add this to your webpack file so it knows 
-								to look for imports that are .jsx files along with others in the future, 
-								add it to the top right above output:
-							 </p>
+								You also need to add this to your webpack file so it knows to look for imports that are .jsx files along with others in the
+								future, add it to the top right above output:
+							</p>
 							<pre class="pre">
 								<code class="code">
   resolve: {
@@ -378,12 +394,10 @@
   },</code>
  							</pre>
 							<p class="article__paragraph">
-								And that's it!  You now have React setup with babel and webpack.  
-								Next up we'll look into adding hot reloading and setup some scripts 
-								in our package.json file.  Adding these will enhance the development 
-								environment.  Also, if you havent already I highly recommend using 
-								Chrome and getting the React Dev tools for chrome.  This will allow 
-								you to see the details regarding your react components in Chrome.
+								And that's it!  You now have React setup with babel and webpack.  Next up we'll look into adding hot reloading and setup
+								some scripts in our package.json file.  Adding these will enhance the development environment.  Also, if you havent
+								already I highly recommend using Chrome and getting the React Dev tools for chrome.  This will allow you to see the
+								details regarding your react components in Chrome.
 							</p>
 							<footer>
 								<a class="link footer__link text_size_small" href="./soIChoseReact.html#article-1">previous</a>
@@ -435,12 +449,12 @@
 						</div>
 						<div class="promo">
 							<a class="link mdn-promo" href="https://developer.mozilla.org/en-US/">
-											<img class="mdn-banner" src="../imgs/MDN_promoBanner_120x240px_v2.png" alt="mdn">
-										</a>
+								<img class="mdn-banner" src="../imgs/MDN_promoBanner_120x240px_v2.png" alt="mdn">
+							</a>
 							<hr class="hr" />
 							<a class="link w3c-promo" href="https://www.w3.org/">
-											<img class="w3c-banner" src="../imgs/w3c.png" alt="w3c">
-										</a>
+								<img class="w3c-banner" src="../imgs/w3c.png" alt="w3c">
+							</a>
 						</div>
 					</aside>
 					<footer class="footer flex-item">
